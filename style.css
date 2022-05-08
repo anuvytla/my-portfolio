@@ -1,0 +1,179 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url('./images/298-2982060_52-simple-backgrounds-presentation-background-download-simple.jpeg');
+    background-size:cover;
+    flex-wrap: wrap;
+}
+
+header{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2f195f;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: row;
+}
+
+header h1{
+    width:50%;
+    font-family: Tapestry, sans-serif;
+}
+
+header nav {
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+header nav ul li {
+    display:inline-block;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #d3d3d3; 
+    background-size: 100% 0.3em;
+}
+
+header nav ul li a:hover {
+    background-size: 100% 100%;
+    color:rgb(213, 213, 11);
+    background-color: rgb(66, 140, 140);
+}
+
+h2 {
+    font-size: 55px;
+    color:rgb(108, 29, 29);
+    font-family: Tapestry, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    width: 75%;
+    margin-top: 25px;
+    padding: 50px;
+    height: auto;
+    color: rgb(30, 56, 81);
+    font-size: x-large;
+    font-family: Patrick Hand, sans-serif;
+    border: #8a949a solid 4px;
+}
+
+
+
+#about {
+    justify-content: left;
+    background-color: #d3d3d377;
+}
+
+#work{
+    align-self: flex-end;
+    background-color: #4f7f8777;
+    height: 115vh;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#work div:hover .overlay {
+    left: 0;
+    width: 100%;
+}
+
+.overlay {
+    position: relative;
+    left: 100%;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    background-color: #df9b5266;
+    bottom: 0;
+    right: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay a {
+    font-size: 40px;
+    color: rgb(227, 227, 81);
+}
+
+.boxes1 {
+    flex-basis: 90%;
+    margin: 10px;
+    text-align:bottom-right;
+    height: 325px;
+    font-size: 20px;
+    border-right: 7px solid rgb(2, 50, 99);
+    color:brown;
+    font-family: Tapestry, sans-serif;
+    background-image: url('./images/gpu_ai_gaming-100757633-large.webp');
+}
+
+.boxes{
+    background-color:rgba(7, 81, 81, 0.5);
+    margin: 10px;
+    flex-basis: 40%;
+    text-align:bottom-right;
+    height: 125px;
+    font-size: 20px;
+    border-right: 4px solid rgb(2, 50, 99);
+    color:brown;
+    font-family: Tapestry, sans-serif;
+    background-image: url('./images/Data-Storage-–-Cloud-IoT-and-Data-Center-1024x591.jpeg')
+}
+
+@media screen and (max-width: 800px) {
+    .boxes1 {
+        flex-basis: 90%;
+    }
+
+    .boxes {
+        flex-basis: 90%;
+    }
+}
+
+#contact{
+    justify-content: left;
+    background-color: #b0ae5577;
+    text-decoration: underline;
+
+}
+
+#resume {
+    align-self: flex-end;
+    background-color: #1a909a77;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+  
